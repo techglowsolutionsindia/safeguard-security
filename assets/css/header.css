@@ -52,15 +52,16 @@
 .site-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex: 1;
   min-width: 0;
+  margin-left: auto;
 }
 
 .site-nav__list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-wrap: nowrap;
   gap: clamp(0.75rem, 1.4vw, 1.5rem);
   list-style: none;
