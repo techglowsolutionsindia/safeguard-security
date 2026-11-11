@@ -1,0 +1,60 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="310"
+     height="64"
+     viewBox="0 0 310 64"
+     role="img"
+     aria-labelledby="title">
+
+  <title id="title">SafeGuard Security Logo</title>
+
+  <!-- Shield Icon Started -->
+  <rect x="0" y="0" width="64" height="64" rx="13" fill="#0B1B2B"/>
+
+  <path
+    d="M32 8
+       L51 16
+       V30
+       C51 43 43 52 32 57
+       C21 52 13 43 13 30
+       V16
+       Z"
+    fill="#152C42"
+    stroke="#D4A64A"
+    stroke-width="2.5"
+    stroke-linejoin="round"/>
+
+  <path
+    d="M23 32 L29 38 L41 25"
+    fill="none"
+    stroke="#D4A64A"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+  <!-- Shield Icon Ended -->
+
+  <!-- Brand Name Started -->
+  <text
+    x="78"
+    y="30"
+    fill="#FFFFFF"
+    font-family="Montserrat, Arial, sans-serif"
+    font-size="23"
+    font-weight="800"
+    letter-spacing="0.3">
+    SafeGuard
+  </text>
+
+  <text
+    x="80"
+    y="48"
+    fill="#D4A64A"
+    font-family="Montserrat, Arial, sans-serif"
+    font-size="12"
+    font-weight="700"
+    letter-spacing="4">
+    SECURITY
+  </text>
+  <!-- Brand Name Ended -->
+
+</svg>

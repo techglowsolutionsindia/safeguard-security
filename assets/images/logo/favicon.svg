@@ -1,0 +1,40 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="64"
+     height="64"
+     viewBox="0 0 64 64"
+     role="img"
+     aria-labelledby="title">
+
+  <title id="title">SafeGuard Security Favicon</title>
+
+  <!-- Background Started -->
+  <rect width="64" height="64" rx="13" fill="#0B1B2B"/>
+  <!-- Background Ended -->
+
+  <!-- Shield Started -->
+  <path
+    d="M32 8
+       L51 16
+       V30
+       C51 43 43 52 32 57
+       C21 52 13 43 13 30
+       V16
+       Z"
+    fill="#152C42"
+    stroke="#D4A64A"
+    stroke-width="2.5"
+    stroke-linejoin="round"/>
+  <!-- Shield Ended -->
+
+  <!-- Security Checkmark Started -->
+  <path
+    d="M23 32 L29 38 L41 25"
+    fill="none"
+    stroke="#D4A64A"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+  <!-- Security Checkmark Ended -->
+
+</svg>

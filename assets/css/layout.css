@@ -1,0 +1,258 @@
+/* ==================================================
+   SAFEGUARD SECURITY - GLOBAL LAYOUT STARTED
+================================================== */
+
+/* Global Container Started */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.container-fluid {
+  width: 100%;
+  padding-inline: var(--container-padding);
+}
+/* Global Container Ended */
+
+/* Global Section Layout Started */
+.section {
+  position: relative;
+  width: 100%;
+  padding-block: var(--section-padding-y);
+}
+
+.section--light {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.section--white {
+  background-color: var(--color-white);
+  color: var(--color-text);
+}
+
+.section--dark {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+}
+
+.section--secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-text-light);
+}
+
+.section--compact {
+  padding-block: calc(var(--section-padding-y) * 0.6);
+}
+
+.section--full {
+  min-height: calc(100svh - var(--header-height));
+  display: flex;
+  align-items: center;
+}
+
+.section--full > .container {
+  width: 100%;
+}
+/* Global Section Layout Ended */
+
+/* Section Heading Layout Started */
+.section-heading {
+  max-width: 760px;
+  margin-bottom: var(--section-gap);
+}
+
+.section-heading--center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.section-heading--left {
+  text-align: left;
+}
+
+.section-heading__eyebrow {
+  display: inline-block;
+  margin-bottom: var(--space-sm);
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-heading__title {
+  margin-bottom: var(--space-md);
+}
+
+.section-heading__description {
+  max-width: 650px;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+}
+
+.section-heading--center .section-heading__description {
+  margin-inline: auto;
+}
+
+.section--dark .section-heading__description,
+.section--secondary .section-heading__description {
+  color: var(--color-text-light);
+}
+/* Section Heading Layout Ended */
+
+/* Global Grid Layout Started */
+.grid {
+  display: grid;
+  gap: var(--space-lg);
+  min-width: 0;
+}
+
+.grid--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid--4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid--auto {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+}
+
+.grid > * {
+  min-width: 0;
+}
+/* Global Grid Layout Ended */
+
+/* Global Flex Layout Started */
+.flex {
+  display: flex;
+  gap: var(--space-md);
+  min-width: 0;
+}
+
+.flex--center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex--between {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
+/* Global Flex Layout Ended */
+
+/* Split Content Layout Started */
+.split-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: var(--section-gap);
+}
+
+.split-layout__content,
+.split-layout__media {
+  min-width: 0;
+}
+
+.split-layout__media img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/* Split Content Layout Ended */
+
+/* Global Media Layout Started */
+.media-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.media-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-portrait {
+  aspect-ratio: 4 / 5;
+}
+
+.aspect-video,
+.aspect-square,
+.aspect-portrait {
+  overflow: hidden;
+}
+
+.aspect-video img,
+.aspect-square img,
+.aspect-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Global Media Layout Ended */
+
+/* Global Content Utilities Started */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mx-auto {
+  margin-inline: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-content {
+  max-width: 760px;
+}
+
+.content-stack > * + * {
+  margin-top: var(--space-md);
+}
+
+.content-stack--large > * + * {
+  margin-top: var(--space-lg);
+}
+/* Global Content Utilities Ended */
+
+/* ==================================================
+   SAFEGUARD SECURITY - GLOBAL LAYOUT ENDED
+================================================== */

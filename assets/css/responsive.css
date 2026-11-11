@@ -1,0 +1,1839 @@
+/* ==================================================
+   SAFEGUARD SECURITY - RESPONSIVE STYLES STARTED
+================================================== */
+
+/* Large Desktop Layout Started */
+@media (min-width: 1200px) {
+  .section--full {
+    min-height: calc(100svh - var(--header-height));
+  }
+}
+/* Large Desktop Layout Ended */
+
+/* Tablet And Small Laptop Layout Started */
+@media (min-width: 768px) and (max-width: 1199px) {
+  :root {
+    --header-height: 80px;
+    --section-padding-y: clamp(4rem, 6vw, 5.5rem);
+    --section-gap: 2.5rem;
+  }
+
+  .grid--4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid--3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .split-layout {
+    gap: 2.5rem;
+  }
+}
+/* Tablet And Small Laptop Layout Ended */
+
+/* Mobile Layout Started */
+@media (max-width: 767px) {
+  :root {
+    --header-height: 72px;
+    --container-padding: 1.25rem;
+    --section-padding-y: 4rem;
+    --section-gap: 2rem;
+    --font-size-h1: clamp(2.25rem, 8vw, 3.25rem);
+    --font-size-h2: clamp(1.875rem, 6vw, 2.5rem);
+    --font-size-h3: 1.375rem;
+  }
+
+  /* Global Mobile Layout Started */
+  .section--full {
+    min-height: auto;
+  }
+
+  .section--compact {
+    padding-block: 2.75rem;
+  }
+
+  .section-heading {
+    margin-bottom: var(--section-gap);
+  }
+
+  .section-heading__description {
+    font-size: var(--font-size-base);
+  }
+  /* Global Mobile Layout Ended */
+
+  /* Global Mobile Grids Started */
+  .grid--2,
+  .grid--3,
+  .grid--4,
+  .split-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .grid--auto {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  }
+
+  .grid {
+    gap: var(--space-md);
+  }
+
+  .split-layout {
+    gap: var(--space-xl);
+  }
+  /* Global Mobile Grids Ended */
+
+  /* Global Mobile Flex Started */
+  .flex--mobile-column {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flex--mobile-center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  /* Global Mobile Flex Ended */
+
+  /* Global Mobile Content Started */
+  .content-stack--large > * + * {
+    margin-top: var(--space-md);
+  }
+
+  .section-heading__eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+  }
+  /* Global Mobile Content Ended */
+}
+/* Mobile Layout Ended */
+
+/* Small Mobile Layout Started */
+@media (max-width: 479px) {
+  :root {
+    --container-padding: 1rem;
+    --section-padding-y: 3.5rem;
+    --section-gap: 1.75rem;
+    --font-size-h1: clamp(2rem, 9vw, 2.75rem);
+    --font-size-h2: clamp(1.75rem, 7vw, 2.125rem);
+  }
+
+  .grid--auto {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .section--compact {
+    padding-block: 2.5rem;
+  }
+
+  .section-heading__title {
+    margin-bottom: var(--space-sm);
+  }
+}
+/* Small Mobile Layout Ended */
+
+/* Mobile Landscape Layout Started */
+@media (max-height: 500px) and (orientation: landscape) {
+  .section--full {
+    min-height: auto;
+  }
+}
+/* Mobile Landscape Layout Ended */
+
+/* ==================================================
+   SAFEGUARD SECURITY - COMPONENT RESPONSIVENESS STARTED
+================================================== */
+
+/* ==================================================
+   HEADER RESPONSIVE STYLE STARTED
+================================================== */
+@media (max-width: 1199px) {
+  .site-header__inner {
+    gap: var(--space-md);
+  }
+
+  .site-header__logo {
+    height: 46px;
+    max-width: 210px;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    width: 100%;
+    max-height: calc(100dvh - var(--header-height));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background-color: var(--color-primary);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: var(--shadow-md);
+  }
+
+  .site-nav.is-open {
+    display: block;
+  }
+
+  .site-nav__list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 1rem var(--container-padding) 1.5rem;
+  }
+
+  .site-nav__link {
+    width: 100%;
+    min-height: 48px;
+    padding-block: 0.75rem;
+    white-space: normal;
+  }
+
+  .site-nav__link::after {
+    bottom: 6px;
+  }
+
+  .site-nav__toggle {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-header__logo {
+    height: 42px;
+    max-width: 180px;
+  }
+
+  .site-header__cta {
+    min-height: 42px;
+    padding: 0.65rem 0.85rem;
+    font-size: 0.75rem;
+    white-space: normal;
+  }
+
+  .site-header__actions {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .site-header__logo {
+    height: 38px;
+    max-width: 145px;
+  }
+
+  .site-header__cta {
+    padding: 0.55rem 0.65rem;
+    font-size: 0.6875rem;
+  }
+}
+
+/* ==================================================
+   HEADER RESPONSIVE STYLE ENDED
+================================================== */
+
+/* ==================================================
+   01 HERO RESPONSIVE STYKES STARTED
+================================================== */
+@media (min-width: 1200px) {
+  .hero__content {
+    padding-block: var(--space-3xl);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero__content {
+    max-width: 680px;
+    padding-block: var(--space-2xl);
+  }
+
+  .hero__overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(11, 27, 43, 0.97) 0%,
+      rgba(11, 27, 43, 0.86) 55%,
+      rgba(11, 27, 43, 0.45) 100%
+    );
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    height: auto;
+    min-height: calc(100svh - var(--header-height));
+    overflow: visible;
+  }
+
+  .hero__content {
+    max-width: 100%;
+    padding-block: 5rem;
+  }
+
+  .hero__background img {
+    object-position: 65% center;
+  }
+
+  .hero__overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(11, 27, 43, 0.96) 0%,
+      rgba(11, 27, 43, 0.88) 65%,
+      rgba(11, 27, 43, 0.7) 100%
+    );
+  }
+
+  .hero__description {
+    font-size: var(--font-size-base);
+    line-height: 1.75;
+  }
+
+  .hero__actions {
+    gap: var(--space-sm);
+  }
+
+  .hero__highlights {
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+  }
+}
+
+@media (max-width: 479px) {
+  .hero__content {
+    padding-block: 2.5rem;
+  }
+
+  .hero__eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+  }
+
+  .hero__actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .hero__highlights {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+}
+/* ==================================================
+   01 HERO RESPONSIVE STYKES ENDED
+================================================== */
+
+/* ==================================================
+   FOOTER RESPONSIVE STYKES STARTED
+================================================== */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .site-footer__main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+  }
+
+  .site-footer__bottom-inner {
+    grid-template-columns: 1fr auto;
+  }
+
+  .site-footer__legal {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-footer__main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem 1.5rem;
+    padding-block: 4rem;
+  }
+
+  .site-footer__logo {
+    height: 48px;
+    max-width: 220px;
+  }
+
+  .site-footer__bottom-inner {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: 1rem;
+    padding-block: 1.5rem;
+    text-align: center;
+  }
+
+  .site-footer__legal {
+    gap: 1rem;
+  }
+
+  .site-footer__back-top {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .site-footer__main {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+
+  .site-footer__logo {
+    height: 46px;
+    max-width: 200px;
+  }
+
+  .site-footer__heading {
+    margin-bottom: 1.25rem;
+  }
+
+  .site-footer__social {
+    margin-top: 1.5rem;
+  }
+}
+/* ==================================================
+   FOOTER RESPONSIVE STYKES ENDED
+================================================== */
+
+/* ==================================================
+   SAFEGUARD SECURITY - COMPONENT RESPONSIVENESS ENDED
+================================================== */
+
+/* ==================================================
+   02. ABOUT UD RESPONSIVE STYLES STARTED
+================================================== */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .about-section {
+    min-height: auto;
+    padding-block: 4rem;
+  }
+
+  .about-section__layout {
+    gap: 2rem;
+  }
+
+  .about-section__image-frame {
+    height: 520px;
+  }
+
+  .about-section__title {
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .about-section {
+    min-height: auto;
+    padding-block: 4rem;
+    overflow: visible;
+  }
+
+  .about-section__layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+
+  .about-section__visual {
+    max-width: 540px;
+    margin-inline: auto;
+  }
+
+  .about-section__image-frame {
+    height: clamp(320px, 65vw, 480px);
+  }
+
+  .about-section__title {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .about-section__visual-label {
+    right: 0;
+    bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .about-section__visual {
+    padding: 0 1rem 1rem 0;
+  }
+
+  .about-section__image-accent {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .about-section__image-frame {
+    height: 350px;
+  }
+
+  .about-section__visual-label {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .about-section__commitment {
+    padding: 0.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-section__image-frame img,
+  .about-section__commitment,
+  .about-section__link span {
+    transition: none;
+  }
+
+  .about-section__visual:hover img,
+  .about-section__commitment:hover,
+  .about-section__link:hover span {
+    transform: none;
+  }
+}
+/* ==================================================
+   02. ABOUT UD RESPONSIVE STYLES ENDED
+================================================== */
+
+/* ==================================================
+   03. SERVICES RESPONSIVE STYLES STARTED
+================================================== */
+@media (min-width: 1200px) {
+  .services-section {
+    height: calc(100svh - var(--header-height));
+    min-height: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .services-section {
+    min-height: auto;
+    padding-block: 4rem;
+  }
+
+  .services-section__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .services-section__header {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-section {
+    min-height: auto;
+    padding-block: 4rem;
+    overflow: visible;
+  }
+
+  .services-section__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .services-section__intro {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .services-section__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .service-card {
+    min-height: 205px;
+  }
+
+  .services-section__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 479px) {
+  .services-section__title {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    padding: 1.2rem;
+  }
+
+  .services-section__cta {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-card,
+  .service-card__link span,
+  .services-section__cta {
+    transition: none;
+  }
+
+  .service-card:hover,
+  .service-card:focus-within,
+  .service-card__link:hover span,
+  .services-section__cta:hover {
+    transform: none;
+  }
+}
+/* ==================================================
+   03. SERVICES RESPONSIVE STYLES ENDED
+================================================== */
+
+/* =================================================
+   04. WHY CHOOSE US RESPONSIVE STYLES STARTED
+================================================== */
+
+@media (max-width: 1199px) {
+  .why-choose-us-section {
+    min-height: auto;
+    padding-block: 3.5rem;
+  }
+
+  .why-choose-us-section__layout {
+    gap: 2rem;
+  }
+
+  .why-benefit {
+    min-height: 215px;
+    padding: 1.1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .why-choose-us-section__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .why-choose-us-section__intro {
+    max-width: 700px;
+  }
+
+  .why-choose-us-section__benefits {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .why-benefit {
+    min-height: 190px;
+  }
+}
+
+@media (max-width: 767px) {
+  .why-choose-us-section {
+    padding-block: 3rem;
+  }
+
+  .why-choose-us-section__title {
+    font-size: clamp(2rem, 7vw, 2.7rem);
+  }
+
+  .why-choose-us-section__benefits {
+    gap: 0.85rem;
+  }
+
+  .why-benefit {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .why-choose-us-section__benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .why-benefit {
+    padding: 1.25rem;
+  }
+
+  .why-choose-us-section__cta {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .why-benefit,
+  .why-benefit::before,
+  .why-choose-us-section__cta {
+    transition: none;
+  }
+
+  .why-benefit:hover,
+  .why-choose-us-section__cta:hover {
+    transform: none;
+  }
+}
+
+/* =================================================
+   04. WHY CHOOSE US RESPONSIVE STYLES ENDED
+================================================== */
+
+/* =================================================
+   05. INDUSTRIES WE PROTECT RESPONSIVE STYLES STARTED
+================================================== */
+
+/* Large Desktop Started */
+@media (min-width: 1200px) {
+  .industries-section {
+    min-height: calc(100svh - var(--header-height));
+    padding-block: 1.25rem;
+  }
+
+  .industries-section__grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(185px, 1fr));
+    gap: 0.85rem;
+  }
+
+  .industries-section__grid > .industry-tile {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .industries-section__grid > .industry-tile--featured {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .industries-section__grid > .industry-tile:nth-child(2) {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+  }
+
+  .industries-section__grid > .industry-tile:nth-child(3) {
+    grid-column: 5 / span 2;
+    grid-row: 1;
+  }
+
+  .industries-section__grid > .industry-tile:nth-child(4) {
+    grid-column: 3 / span 1;
+    grid-row: 2;
+  }
+
+  .industries-section__grid > .industry-tile:nth-child(5) {
+    grid-column: 4 / span 2;
+    grid-row: 2;
+  }
+
+  .industries-section__grid > .industry-tile:nth-child(6) {
+    grid-column: 6 / span 1;
+    grid-row: 2;
+  }
+
+  .industry-tile--featured {
+    min-height: 0;
+  }
+}
+/* Large Desktop Ended */
+
+/* Tablet and Small Desktop Started */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .industries-section {
+    min-height: auto;
+    padding-block: 3rem;
+  }
+
+  .industries-section__header {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 1.5rem;
+  }
+
+  .industries-section__title {
+    font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+  }
+
+  .industries-section__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(185px, auto));
+    gap: 0.85rem;
+  }
+
+  .industries-section__grid > .industry-tile {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .industries-section__grid > .industry-tile--featured {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    min-height: 0;
+    padding: 1.5rem;
+  }
+
+  .industries-section__grid > .industry-tile:nth-child(2) {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+  }
+
+  .industries-section__grid > .industry-tile:nth-child(3) {
+    grid-column: 3 / span 2;
+    grid-row: 2;
+  }
+
+  .industries-section__grid > .industry-tile:nth-child(4) {
+    grid-column: 1 / span 1;
+    grid-row: 3;
+  }
+
+  .industries-section__grid > .industry-tile:nth-child(5) {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+  }
+
+  .industries-section__grid > .industry-tile:nth-child(6) {
+    grid-column: 4 / span 1;
+    grid-row: 3;
+  }
+
+  .industry-tile {
+    min-height: 185px;
+    padding: 1.1rem;
+  }
+
+  .industry-tile--featured h3 {
+    font-size: 1.65rem;
+  }
+}
+/* Tablet and Small Desktop Ended */
+
+/* Tablet Portrait Started */
+@media (min-width: 768px) and (max-width: 991px) {
+  .industries-section {
+    min-height: auto;
+    padding-block: 3rem;
+  }
+
+  .industries-section__header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .industries-section__intro {
+    max-width: 650px;
+  }
+
+  .industries-section__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+    grid-auto-rows: auto;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .industries-section__grid > .industry-tile {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .industries-section__grid > .industry-tile--featured {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    min-height: 0;
+    background-position: center 55%;
+  }
+
+  .industry-tile {
+    min-height: 190px;
+    padding: 1.2rem;
+  }
+
+  .industry-tile--featured .industry-tile__content {
+    max-width: 430px;
+  }
+
+  .industry-tile__content > svg {
+    margin-top: 0.75rem;
+  }
+
+  .industry-tile__features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem 1rem;
+  }
+}
+/* Tablet Portrait Ended */
+
+/* Mobile Started */
+@media (min-width: 576px) and (max-width: 767px) {
+  .industries-section {
+    min-height: auto;
+    padding-block: 3rem;
+  }
+
+  .industries-section__header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .industries-section__title {
+    font-size: clamp(2rem, 6.5vw, 2.7rem);
+  }
+
+  .industries-section__intro {
+    max-width: 100%;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .industries-section__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+    gap: 0.85rem;
+  }
+
+  .industries-section__grid > .industry-tile {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .industries-section__grid > .industry-tile--featured {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    min-height: 340px;
+  }
+
+  .industry-tile {
+    min-height: 195px;
+    padding: 1rem;
+  }
+
+  .industry-tile--featured {
+    padding: 1.5rem;
+  }
+
+  .industry-tile--featured h3 {
+    font-size: 1.55rem;
+  }
+
+  .industry-tile__features {
+    grid-template-columns: 1fr;
+  }
+}
+/* Mobile Ended */
+
+/* Small Mobile Started */
+@media (max-width: 575px) {
+  .industries-section {
+    min-height: auto;
+    padding-block: 2.75rem;
+  }
+
+  .industries-section__header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .industries-section__title {
+    font-size: clamp(1.9rem, 8vw, 2.35rem);
+  }
+
+  .industries-section__intro {
+    max-width: 100%;
+    padding-left: 1rem;
+  }
+
+  .industries-section__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0.85rem;
+  }
+
+  .industries-section__grid > .industry-tile {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .industries-section__grid > .industry-tile--featured {
+    grid-column: 1;
+    grid-row: auto;
+    min-height: 0;
+  }
+
+  .industry-tile {
+    min-height: 0;
+    padding: 1.25rem;
+  }
+
+  .industry-tile--featured {
+    padding: 1.5rem;
+    background-position: center;
+  }
+
+  .industry-tile--featured h3 {
+    font-size: 1.6rem;
+  }
+
+  .industry-tile--featured p {
+    max-width: 290px;
+  }
+
+  .industry-tile__features {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+
+  .industry-tile--featured .industry-tile__featured-cta {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .industry-tile__top {
+    margin-bottom: 0.65rem;
+  }
+
+  .industry-tile p {
+    margin-bottom: 0.8rem;
+  }
+}
+/* Small Mobile Ended */
+
+/* Industries Tablet and Mobile Grid Fix Started */
+@media (max-width: 991px) {
+  .industries-section__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+    grid-auto-rows: auto;
+    align-items: stretch;
+  }
+
+  .industries-section__grid > .industry-tile,
+  .industries-section__grid > .industry-tile:nth-child(n) {
+    grid-column: auto;
+    grid-row: auto;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  .industries-section__grid > .industry-tile--featured {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 575px) {
+  .industries-section__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .industries-section__grid > .industry-tile--featured {
+    grid-column: 1;
+  }
+}
+/* Industries Tablet and Mobile Grid Fix Ended */
+
+/* Reduced Motion Started */
+@media (prefers-reduced-motion: reduce) {
+  .industry-tile,
+  .industry-tile a span,
+  .industry-tile__featured-cta {
+    transition: none;
+  }
+
+  .industry-tile:hover,
+  .industry-tile:focus-within,
+  .industry-tile a:hover span,
+  .industry-tile__featured-cta:hover {
+    transform: none;
+  }
+}
+/* Reduced Motion Ended */
+
+/* =================================================
+   05. INDUSTRIES WE PROTECT RESPONSIVE STYLES ENDED
+================================================== */
+
+/* =================================================
+   06. OUR SECURITY PROCESS RESPONSIVE STYLES STARTED
+================================================== */
+
+/* Large Desktop Started */
+@media (min-width: 1200px) {
+  .process-section {
+    min-height: calc(100svh - var(--header-height));
+    padding-block: 1.5rem;
+  }
+
+  .process-section__header {
+    margin-bottom: 1.7rem;
+  }
+
+  .process-card__image {
+    height: clamp(115px, 17svh, 165px);
+  }
+
+  .process-card__body {
+    min-height: 165px;
+  }
+}
+/* Large Desktop Ended */
+
+/* Tablet Landscape Started */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .process-section {
+    min-height: auto;
+    padding-block: 3rem;
+  }
+
+  .process-section__grid {
+    gap: 0.7rem;
+  }
+
+  .process-card__image {
+    height: 135px;
+  }
+
+  .process-card__body {
+    min-height: 190px;
+    padding-inline: 0.7rem;
+  }
+}
+/* Tablet Landscape Ended */
+
+/* Tablet Portrait Started */
+@media (min-width: 768px) and (max-width: 991px) {
+  .process-section {
+    min-height: auto;
+    padding-block: 3.5rem;
+  }
+
+  .process-section__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .process-card__image {
+    height: 155px;
+  }
+
+  .process-card__body {
+    min-height: 165px;
+  }
+
+  .process-section__footer {
+    flex-wrap: wrap;
+  }
+}
+/* Tablet Portrait Ended */
+
+/* Mobile Started */
+@media (min-width: 576px) and (max-width: 767px) {
+  .process-section {
+    min-height: auto;
+    padding-block: 3rem;
+  }
+
+  .process-section__header {
+    margin-bottom: 1.7rem;
+  }
+
+  .process-section__title {
+    font-size: clamp(2rem, 6vw, 2.6rem);
+  }
+
+  .process-section__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .process-card__image {
+    height: 155px;
+  }
+
+  .process-card__body {
+    min-height: 155px;
+  }
+
+  .process-section__footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+/* Mobile Ended */
+
+/* Small Mobile Started */
+@media (max-width: 575px) {
+  .process-section {
+    min-height: auto;
+    padding-block: 2.75rem;
+  }
+
+  .process-section__header {
+    margin-bottom: 1.5rem;
+  }
+
+  .process-section__title {
+    font-size: clamp(1.9rem, 8vw, 2.35rem);
+  }
+
+  .process-section__intro {
+    font-size: 0.9rem;
+  }
+
+  .process-section__grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .process-card__image {
+    height: 180px;
+  }
+
+  .process-card__body {
+    min-height: 0;
+    padding: 2.2rem 1.25rem 1.5rem;
+  }
+
+  .process-card p {
+    max-width: 320px;
+    margin-inline: auto;
+  }
+
+  .process-section__footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .process-section__cta {
+    width: 100%;
+  }
+}
+/* Small Mobile Ended */
+
+/* Reduced Motion Started */
+@media (prefers-reduced-motion: reduce) {
+  .process-card,
+  .process-card__image img,
+  .process-section__cta {
+    transition: none;
+  }
+
+  .process-card:hover,
+  .process-card:hover .process-card__image img,
+  .process-section__cta:hover {
+    transform: none;
+  }
+}
+/* Reduced Motion Ended */
+
+/* =================================================
+   06. OUR SECURITY PROCESS RESPONSIVE STYLES ENDED
+================================================== */
+
+/* =================================================
+   07. TESTIMONIALS RESPONSIVE STYLES STARTED
+================================================== */
+
+/* Large Desktop Started */
+@media (min-width: 1200px) {
+  .testimonials-section {
+    min-height: calc(100svh - var(--header-height));
+    padding-block: 2rem;
+  }
+
+  .testimonials-section__heading {
+    margin-bottom: 2rem;
+  }
+
+  .testimonials-carousel {
+    min-height: 320px;
+    padding-block: 1.5rem 3rem;
+  }
+}
+/* Large Desktop Ended */
+
+/* Tablet and Small Desktop Started */
+@media (max-width: 1199px) {
+  .testimonials-section {
+    min-height: auto;
+    padding-block: 4rem;
+  }
+
+  .testimonials-section__heading {
+    margin-bottom: 2rem;
+  }
+
+  .testimonials-carousel {
+    min-height: 310px;
+    padding: 1.5rem 4rem 3rem;
+  }
+
+  .testimonials-carousel__shield {
+    width: 85px;
+    height: 100px;
+    opacity: 0.45;
+  }
+
+  .testimonial-slide {
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 1.75rem;
+    padding: 2rem;
+  }
+
+  .testimonial-slide__avatar {
+    width: 115px;
+    height: 115px;
+    font-size: 2rem;
+  }
+}
+/* Tablet and Small Desktop Ended */
+
+/* Tablet Portrait Started */
+@media (max-width: 991px) {
+  .testimonials-section__title {
+    font-size: clamp(2rem, 4.5vw, 2.8rem);
+  }
+
+  .testimonials-carousel {
+    padding-inline: 3.25rem;
+  }
+
+  .testimonials-carousel__shield {
+    display: none;
+  }
+
+  .testimonial-slide {
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 1.5rem;
+    min-height: 230px;
+    padding: 1.75rem;
+    border-radius: 22px;
+  }
+
+  .testimonial-slide__avatar {
+    width: 100px;
+    height: 100px;
+    font-size: 1.8rem;
+  }
+
+  .testimonial-slide__content {
+    padding-left: 1.5rem;
+  }
+
+  .testimonial-slide__quote-mark {
+    left: 1.1rem;
+    font-size: 4rem;
+  }
+
+  .testimonials-carousel__arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* Tablet Portrait Ended */
+
+/* Mobile Started */
+@media (max-width: 767px) {
+  .testimonials-section {
+    padding-block: 3.5rem;
+    background-position: 65% center;
+  }
+
+  .testimonials-section__heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonials-section__eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+  }
+
+  .testimonials-section__title {
+    font-size: clamp(1.85rem, 6vw, 2.5rem);
+  }
+
+  .testimonials-section__notice {
+    font-size: 0.78rem;
+  }
+
+  .testimonials-carousel {
+    min-height: 0;
+    padding: 0 0 4rem;
+  }
+
+  .testimonials-carousel__track {
+    width: 100%;
+  }
+
+  .testimonial-slide {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1.5rem;
+    min-height: 340px;
+    padding: 2rem 1.5rem 3rem;
+    text-align: center;
+  }
+
+  .testimonial-slide__avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .testimonial-slide__content {
+    width: 100%;
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .testimonial-slide__quote-mark {
+    top: -1.4rem;
+    left: 0;
+    font-size: 3.5rem;
+  }
+
+  .testimonial-slide blockquote p {
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .testimonial-slide__author {
+    align-items: center;
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .testimonials-carousel__arrow {
+    top: auto;
+    bottom: 0;
+    width: 42px;
+    height: 42px;
+    transform: none;
+  }
+
+  .testimonials-carousel__arrow--prev {
+    left: calc(50% - 110px);
+  }
+
+  .testimonials-carousel__arrow--next {
+    right: calc(50% - 110px);
+  }
+
+  .testimonials-carousel__pagination {
+    bottom: 15px;
+  }
+}
+/* Mobile Ended */
+
+/* Small Mobile Started */
+@media (max-width: 479px) {
+  .testimonials-section {
+    padding-block: 3rem;
+  }
+
+  .testimonials-section__title {
+    font-size: clamp(1.7rem, 7.5vw, 2.1rem);
+  }
+
+  .testimonials-section__eyebrow {
+    gap: 0.5rem;
+  }
+
+  .testimonials-section__eyebrow::before,
+  .testimonials-section__eyebrow::after {
+    width: 20px;
+  }
+
+  .testimonial-slide {
+    min-height: 370px;
+    padding: 1.75rem 1.15rem 2.5rem;
+    border-radius: 18px;
+  }
+
+  .testimonial-slide__avatar {
+    width: 90px;
+    height: 90px;
+    font-size: 1.65rem;
+  }
+
+  .testimonial-slide blockquote p {
+    font-size: 0.92rem;
+  }
+
+  .testimonial-slide__author-name {
+    font-size: 0.88rem;
+  }
+
+  .testimonial-slide__author-role {
+    font-size: 0.76rem;
+  }
+
+  .testimonials-carousel__arrow--prev {
+    left: calc(50% - 95px);
+  }
+
+  .testimonials-carousel__arrow--next {
+    right: calc(50% - 95px);
+  }
+}
+/* Small Mobile Ended */
+
+/* Reduced Motion Started */
+@media (prefers-reduced-motion: reduce) {
+  .testimonials-carousel__arrow,
+  .testimonials-carousel__dot {
+    transition: none;
+  }
+
+  .testimonials-carousel__dot.is-active {
+    transform: none;
+  }
+}
+/* Reduced Motion Ended */
+
+/* =================================================
+   07. TESTIMONIALS RESPONSIVE STYLES ENDED
+================================================== */
+
+/* ==================================================
+   08. FREQUENTLY ASKED QUESTIONS RESPONSIVE STARTED
+================================================== */
+
+/* Large Desktop Started */
+@media (min-width: 1200px) {
+  .faq-section {
+    min-height: calc(100svh - var(--header-height, 88px));
+    padding-block: 1.75rem;
+  }
+
+  .faq-section__visual {
+    max-height: min(570px, calc(100svh - var(--header-height, 88px) - 4rem));
+  }
+}
+/* Large Desktop Ended */
+
+/* Tablet Started */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .faq-section {
+    padding-block: 3.5rem;
+  }
+
+  .faq-section__layout {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: 2rem;
+  }
+
+  .faq-section__visual {
+    display: none;
+  }
+
+  .faq-section__title {
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+  }
+
+  .faq-item__question {
+    font-size: 0.82rem;
+  }
+}
+/* Tablet Ended */
+
+/* Mobile Started */
+@media (max-width: 767px) {
+  .faq-section {
+    min-height: auto;
+    padding-block: 2.5rem;
+  }
+
+  .faq-section__layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+  }
+
+  .faq-section__intro {
+    text-align: center;
+  }
+
+  .faq-section__eyebrow {
+    justify-content: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .faq-section__title {
+    font-size: clamp(1.75rem, 6.5vw, 2.25rem);
+  }
+
+  .faq-section__description {
+    max-width: 420px;
+    margin: 0.75rem auto 1.25rem;
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+
+  .faq-section__highlights {
+    grid-template-columns: 1fr;
+    max-width: 430px;
+    gap: 0.5rem;
+    margin-inline: auto;
+  }
+
+  .faq-section__highlight {
+    min-height: 48px;
+    padding: 0.4rem 0.65rem;
+    text-align: left;
+  }
+
+  .faq-section__highlight-icon {
+    flex-basis: 34px;
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+
+  .faq-section__visual {
+    display: none;
+  }
+
+  .faq-section__accordion {
+    gap: 0.55rem;
+  }
+
+  .faq-item__question {
+    min-height: 52px;
+    padding: 0.75rem 0.85rem;
+    font-size: 0.8rem;
+  }
+
+  .faq-item__answer {
+    padding: 0.7rem 0.85rem 0.85rem;
+  }
+
+  .faq-item__answer p {
+    font-size: 0.8rem;
+    line-height: 1.55;
+  }
+}
+/* Mobile Ended */
+
+/* Reduced Motion Started */
+@media (prefers-reduced-motion: reduce) {
+  .faq-item__question,
+  .faq-item__chevron {
+    transition: none;
+  }
+}
+/* Reduced Motion Ended */
+
+/* ==================================================
+   08. FREQUENTLY ASKED QUESTIONS RESPONSIVE ENDED
+================================================== */
+
+/* ==================================================
+   09. CONTACT & FREE QUOTE RESPONSIVE STARTED
+================================================== */
+
+/* Large Desktop Started */
+@media (min-width: 1200px) {
+  .contact-section {
+    min-height: calc(100svh - var(--header-height, 88px));
+    padding-block: 1.5rem;
+  }
+
+  .contact-section__layout {
+    min-height: 0;
+  }
+
+  .contact-panel {
+    min-height: 0;
+  }
+}
+/* Large Desktop Ended */
+
+/* Tablet Started */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contact-section {
+    min-height: auto;
+    padding-block: 2.5rem;
+  }
+
+  .contact-section__layout {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .contact-section__title {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+  }
+
+  .contact-section__visual {
+    width: 85px;
+    height: 75px;
+  }
+
+  .contact-panel__tab {
+    gap: 0.35rem;
+    font-size: 0.74rem;
+  }
+
+  .contact-panel__content {
+    padding: 1.25rem;
+  }
+
+  .contact-form__grid {
+    gap: 0.65rem;
+  }
+}
+/* Tablet Ended */
+
+/* Mobile Started */
+@media (max-width: 767px) {
+  .contact-section {
+    min-height: auto;
+    padding-block: 2.5rem;
+  }
+
+  .contact-section__layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    padding: 1.25rem;
+    border-radius: 18px;
+  }
+
+  .contact-section__layout::before {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(248, 250, 252, 0.96),
+        rgba(235, 243, 251, 0.95)
+      ),
+      url("../images/contact/security-contact.webp") center / cover no-repeat;
+  }
+
+  .contact-section__intro {
+    text-align: center;
+  }
+
+  .contact-section__eyebrow {
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .contact-section__title {
+    font-size: clamp(1.8rem, 7vw, 2.35rem);
+  }
+
+  .contact-section__description {
+    max-width: 420px;
+    margin: 0.9rem auto 0;
+    font-size: 0.87rem;
+    line-height: 1.6;
+  }
+
+  .contact-section__visual {
+    width: 75px;
+    height: 65px;
+    margin: 1rem auto 0;
+    border-radius: 14px;
+  }
+
+  .contact-panel {
+    max-width: none;
+  }
+
+  .contact-panel__tabs {
+    gap: 0.2rem;
+  }
+
+  .contact-panel__tab {
+    flex-direction: column;
+    gap: 0.3rem;
+    min-height: 62px;
+    padding: 0.6rem 0.2rem;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .contact-panel__tab span {
+    font-size: 1.15rem;
+  }
+
+  .contact-panel__content {
+    min-height: 0;
+    padding: 1rem;
+    border-radius: 0 0 12px 12px;
+  }
+
+  .contact-panel__heading {
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    gap: 0.75rem;
+  }
+
+  .contact-form__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .contact-form__field--full {
+    grid-column: 1;
+  }
+
+  .contact-form__field input,
+  .contact-form__field select,
+  .contact-form__field textarea {
+    font-size: 0.85rem;
+  }
+
+  .contact-panel__alternative {
+    min-height: 220px;
+    gap: 1rem;
+  }
+}
+/* Mobile Ended */
+
+/* Small Mobile Started */
+@media (max-width: 390px) {
+  .contact-section__layout {
+    padding: 0.9rem;
+  }
+
+  .contact-section__title {
+    font-size: 1.75rem;
+  }
+
+  .contact-panel__tab {
+    font-size: 0.66rem;
+  }
+
+  .contact-panel__content {
+    padding: 0.85rem;
+  }
+}
+/* Small Mobile Ended */
+
+/* Reduced Motion Started */
+@media (prefers-reduced-motion: reduce) {
+  .contact-panel__tab,
+  .contact-form__field input,
+  .contact-form__field select,
+  .contact-form__field textarea,
+  .contact-form__submit {
+    transition: none;
+  }
+
+  .contact-form__submit:hover {
+    transform: none;
+  }
+}
+/* Reduced Motion Ended */
+
+/* ==================================================
+   09. CONTACT & FREE QUOTE RESPONSIVE ENDED
+================================================== */
+
+/* ==================================================
+   SAFEGUARD SECURITY - RESPONSIVE STYLES ENDED
+================================================== */

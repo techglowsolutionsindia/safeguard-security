@@ -1,0 +1,106 @@
+/* ==================================================
+   SAFEGUARD SECURITY - GLOBAL DESIGN SYSTEM STARTED
+================================================== */
+
+:root {
+  /* Typography Started */
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+
+  --font-size-h1: clamp(2.5rem, 4.5vw, 4.75rem);
+  --font-size-h2: clamp(2rem, 3.2vw, 3.5rem);
+  --font-size-h3: clamp(1.375rem, 2vw, 1.75rem);
+
+  --line-height-body: 1.7;
+  --line-height-heading: 1.15;
+  /* Typography Ended */
+
+  /* Brand Colors Started */
+  --color-primary: #0b1b2b;
+  --color-secondary: #152c42;
+  --color-accent: #d4a64a;
+  --color-accent-hover: #e4b85f;
+
+  --color-white: #ffffff;
+  --color-background: #f5f7fa;
+  --color-surface: #ffffff;
+  --color-surface-dark: #102235;
+
+  --color-text: #263746;
+  --color-text-muted: #64748b;
+  --color-text-light: #e8edf3;
+  --color-border: #dce3ea;
+
+  --color-success: #167347;
+  --color-error: #b42318;
+  /* Brand Colors Ended */
+
+  /* Layout Started */
+  --container-max-width: 1280px;
+  --container-padding: clamp(1rem, 3vw, 2rem);
+
+  --header-height: 88px;
+
+  --section-padding-y: clamp(4rem, 6vw, 7rem);
+  --section-padding-x: var(--container-padding);
+
+  --section-gap: clamp(2rem, 4vw, 4rem);
+  /* Layout Ended */
+
+  /* Spacing Started */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  /* Spacing Ended */
+
+  /* Borders And Shadows Started */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 18px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 4px 14px rgba(11, 27, 43, 0.06);
+  --shadow-md: 0 12px 30px rgba(11, 27, 43, 0.1);
+  --shadow-lg: 0 20px 50px rgba(11, 27, 43, 0.15);
+  /* Borders And Shadows Ended */
+
+  /* Buttons Started */
+  --button-padding-y: 0.95rem;
+  --button-padding-x: 1.75rem;
+  --button-radius: var(--radius-sm);
+  --button-font-weight: 700;
+  /* Buttons Ended */
+
+  /* Transitions Started */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+  /* Transitions Ended */
+
+  /* Focus Started */
+  --focus-outline-color: #d4a64a;
+  --focus-outline-width: 3px;
+  --focus-outline-offset: 3px;
+  /* Focus Ended */
+}
+
+/* ==================================================
+   SAFEGUARD SECURITY - GLOBAL DESIGN SYSTEM ENDED
+================================================== */
